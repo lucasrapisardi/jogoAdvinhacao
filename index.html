@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jogo advinhação</title>
+        <link rel="icon" type="image/x-icon" href="src\pattern.png">
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"> 
+        <audio controls>
+            <source src="src\Harry Potter - Theme.mp3" type="audio/ogg"> 
+            <source src="src\Harry Potter - Theme.mp3" type="audio/mpeg"> 
+        </audio> 
+    </head>
+
+    <body>
+        <section id="main">
+            <div class="container">
+                <div class="titulo">
+                    <div class="over-title"></div>
+                    <span class="tt-jogo">Jogo advinhação</span>
+                    <img class= "player" src="src\chapeu.png">
+                    <div class="nome">Nickname: 
+                        <input type="text" name="name" id="name"/>
+                        <button id="btnInicia">Começar</button>
+                    </div>
+                    <div class="intervalo">Intervalo: 
+                        <select id="dificuldade" name="dificuldade">
+                            <option value="facil" id="facil">Fácil</option>
+                            <option value="medio" id="medio">Médio</option>
+                            <option value="dificil" id="dificil">Difícil</option>
+                        </select>
+                    </div>
+                    <div class="separator"></div>
+                    <section class="game">
+                        <div class="status" id="status">Olá, vamos jogar a advinhação de números! </div>
+                        <div class="tentativa" id="tentativa">Tentativa: 0</div>
+                        <form class="form" id="form">
+                          <label for="chute" id="dicaChute"></label>
+                          <input type="number" name="chute" id="chute"/>
+                          <button id="btnVerifica">Verificar</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <script src="js\jogo.js"></script>
+    </body>
+</html>
